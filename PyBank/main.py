@@ -54,4 +54,7 @@ Greatest Decrease: {greatest_dec_month}, ${greatest_dec}
 """
 print(analysis)
 
-# output = "output.csv"
+# Outputs the results in a text file
+output_file = "output.txt"
+with open(output_file, "w") as doc:
+    doc.write(analysis)
